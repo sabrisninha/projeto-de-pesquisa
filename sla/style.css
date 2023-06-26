@@ -6,6 +6,7 @@
 
 
 
+
 .container {
     background: linear-gradient(60deg, #9734FF, rgb(78, 78, 209));
     height: 100vh;
@@ -83,7 +84,7 @@ select {
     width: 210px;
     color: #999;
     outline: none;
-}
+} */
 
 i {
     font-size: 30px;

@@ -13,7 +13,7 @@ $telefone = filter_input(INPUT_POST, 'telefone', );
 // echo "Nome: $nome <br>";
 // echo "E-mail: $email <br>";
 
-$result_usuario = "INSERT INTO usuarios (nome, email, cpf, telefone, created) VALUES ('$nome', '$email', '$cpf', '$telefone', NOW())";
+$result_usuario = "INSERT INTO usuarios ( nome, cpf, telefone,  email_pessoal, data_nascimento, grupo_usuario) VALUES ('$nome', '$cpf', '$telefone', '$email_pessoal', '$data_nascimento','$grupo_usuario' )";
 $resultado_usuario = mysqli_query($conn, $result_usuario);
 
 if(mysqli_insert_id($conn)){

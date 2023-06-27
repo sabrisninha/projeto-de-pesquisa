@@ -28,19 +28,21 @@ session_start();
 			<div class="input"><input type="text" name="nome" placeholder="Nome completo"></div>
 			
 	
-			<div class="input"> <input type="email" name="email" placeholder="E-mail"></div>
+			<div class="input"> <input type="email" name="email_pessoal" placeholder="E-mail"></div>
 
 		
 			<div class="input"><input type="text" name="cpf" placeholder="CPF"></div>
-			
-			<div class="input"><input type="date" name="data_nasc" placeholder="Data de nascimento"></div>
+			<div class="input"> <input type="password" name="senha" placeholder="Senha"></div>
+			<div class="input"><input type="date" name="data_nascimento" placeholder="Data de nascimento"></div>
 			<div class="input"><input type="text" name="telefone" placeholder="Telefone"></div>
-			<select name="genero" id="genero"   >
+			<select name="sexo_usuario" id="sexo_usuario"   >
               <option  selected="selected"  value="genero">Gênero</option>
-              <option value="Feminino">Feminino</option>
-              <option value="Masculino">Masculino</option>
-              <option value="Outro">Outro</option>
+              <option value="2" id="2">Feminino</option >
+              <option value="1" id="1">Masculino</option>
+              <option value="3" id="3">Outro</option>
             </select>
+			
+
 	
 			<input type="submit" value="Cadastrar">
 			

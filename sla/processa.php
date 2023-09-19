@@ -32,12 +32,24 @@ $result_usuario = "INSERT INTO usuarios (nome, cpf, senha, telefone, email_pesso
 VALUES ('$nome', '$cpf', '$senha', '$telefone', '$email_pessoal', '$data_nascimento', '$sexo_usuario', '2' )";
 $resultado_usuario = mysqli_query($conn, $result_usuario);
 
+
+
+
 if(mysqli_insert_id($conn)){
 	$_SESSION['msg'] = "<p style='color:green;'>Usuário cadastrado com sucesso! </p>";
-	header("Location: index.php");
+	header("Location: dashboard.php");
+	
 }else{
 	$_SESSION['msg'] = "<p style='color:red;'>Usuário não cadastrado!</p>";
 	header("Location: index.php");
 }
+
+
+
+
+
+
+// 
+
 
 ?>

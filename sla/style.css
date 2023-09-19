@@ -96,7 +96,7 @@ i {
 }
 
 
-.button {
+input[type="submit"] {
     height: 40px;
     width: 180px;
     margin: 20px;

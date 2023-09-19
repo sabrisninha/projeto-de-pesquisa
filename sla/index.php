@@ -15,7 +15,7 @@ session_start();
 			<div class="message"><h3>Insira os campos a baixo </h3>
       <i class='bx bx-error-circle' style='color:#a637f3'  ></i>
     </div>
-		<?php
+	<?php
 		if(isset($_SESSION['msg'])){
 			echo $_SESSION['msg'];
 			unset($_SESSION['msg']);
@@ -43,8 +43,8 @@ session_start();
             </select>
 			
 
-	
-			<input type="submit" value="Cadastrar">
+		<input class="button" type="submit" name="submit" value="Cadastrar">
+		
 			
 		</form>
 		</div>
